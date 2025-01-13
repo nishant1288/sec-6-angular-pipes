@@ -1,0 +1,36 @@
+.pagination {
+    width: 75%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+.pages{
+    margin: auto;
+    width: 400px;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    bottom: 2px;
+}
+
+.buttons button {
+    width: 150px;
+    padding: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.buttons button:disabled {
+    cursor: none;
+}

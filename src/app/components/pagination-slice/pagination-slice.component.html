@@ -1,0 +1,10 @@
+<div class="pagination">
+    <div *ngFor="let page of pages | slice : startIndex : endIndex" class="pages">
+        <h2>{{page.name }}</h2>
+        <p>{{page.description}}</p>
+    </div>
+    <div class="buttons">
+        <button (click)="previous()" [disabled]="startIndex == 0">Previous</button>
+        <button (click)="next()" [disabled]="endIndex >= pages.length">Next</button>
+    </div>
+</div>
