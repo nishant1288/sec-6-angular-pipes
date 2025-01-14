@@ -4,4 +4,13 @@
 
 <p>PI VALUE : {{ pi | number : '1.2-2' }}</p>
 
-<!-- total number of number before the decimal, after the decimal and the max value after the decimal -->
+<!-- minimum number of number before the decimal, after the decimal and the max value after the decimal -->
+
+<h2>Weight CONVERTERs</h2>
+
+<div>
+    <label>Enter weight in lbs</label>
+    <input type="number" [(ngModel)] = "weightInPounds">
+    <button (click)="convertWeight()" >Convert</button>
+    <p>{{weightInKilograms | number : '1.2-2'}}</p>
+</div>
