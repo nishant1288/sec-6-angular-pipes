@@ -7,13 +7,15 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { PaginationSliceComponent } from './components/pagination-slice/pagination-slice.component';
 import { NumberPipeComponent } from './components/number-pipe/number-pipe.component';
 import { FormsModule } from '@angular/forms';
+import { JsonPipeComponent } from './components/json-pipe/json-pipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PipesComponent,
     PaginationSliceComponent,
-    NumberPipeComponent
+    NumberPipeComponent,
+    JsonPipeComponent
   ],
   imports: [
     BrowserModule,

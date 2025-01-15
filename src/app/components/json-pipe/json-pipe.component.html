@@ -1,0 +1,30 @@
+<h2>Without JSON Pipe</h2>
+<p>{{userDetails}}</p>
+
+<h2>With JSON Pipe</h2>
+<p>{{userDetails | json | uppercase}}</p>
+
+<h2>Displaying Table Data to json string</h2>
+<table border="1" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Major</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students" >
+            <td>{{student.name}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.gender}}</td>
+            <td>{{student.major}}</td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="showJsonFunc()" >JSON FORMAT</button>
+
+<div *ngIf="showJson" class="json-format">
+    <pre>{{students | json}}</pre>
+</div>
