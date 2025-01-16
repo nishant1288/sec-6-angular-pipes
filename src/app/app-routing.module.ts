@@ -4,6 +4,7 @@ import { PaginationSliceComponent } from './components/pagination-slice/paginati
 import { PipesComponent } from './components/pipes/pipes.component';
 import { NumberPipeComponent } from './components/number-pipe/number-pipe.component';
 import { JsonPipeComponent } from './components/json-pipe/json-pipe.component';
+import { CustomPipeComponent } from './components/custom-pipe/custom-pipe.component';
 
 const routes: Routes = [
   { 
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'json-pipe',
     component: JsonPipeComponent
+  },
+  {
+    path: 'custom-pipe',
+    component: CustomPipeComponent
   }
 ];
 
