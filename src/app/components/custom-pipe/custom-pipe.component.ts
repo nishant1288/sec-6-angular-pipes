@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./custom-pipe.component.css']
 })
 export class CustomPipeComponent {
+  numbers = [3, 5, 3, 7, 9, 5];
+  sortOrder = 'asc';
 
+  get sortedNumbers() {
+    const sortedArr = [...this.numbers].sort((a, b) => {
+      if (this.sortOrder == 'asc') {
+        return a - b;
+      }
+      else {
+        return b - a;
+      }
+    });
+    return sortedArr;
+  }
 }

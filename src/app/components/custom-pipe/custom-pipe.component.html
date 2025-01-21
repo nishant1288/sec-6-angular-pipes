@@ -1,1 +1,12 @@
-<p>custom-pipe works!</p>
+<h2>Numbers : [ {{numbers}} ]</h2>
+<div class="sorting-btn">
+    <button (click)="sortOrder = 'asc'" >Ascending</button>
+    <button (click)="sortOrder = 'desc'">Descending</button>
+</div>
+<div class="sortd-list">
+    <h3 *ngIf="sortOrder == 'asc'">Ascending</h3>
+    <h3 *ngIf="sortOrder == 'desc'">Descending</h3>
+    <ul>
+        <li *ngFor="let sortNum of sortedNumbers">{{sortNum}}</li>
+    </ul>
+</div>
