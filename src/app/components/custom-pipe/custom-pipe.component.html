@@ -10,3 +10,8 @@
         <li *ngFor="let sortNum of sortedNumbers">{{sortNum}}</li>
     </ul>
 </div>
+<div>
+    <h2>Increment Pipe</h2>
+    <h2>Counter Value : {{counterValue | incrementCount }}</h2>
+    <button (click)="increment()">Increase</button>
+</div>

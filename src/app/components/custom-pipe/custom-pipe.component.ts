@@ -20,4 +20,9 @@ export class CustomPipeComponent {
     });
     return sortedArr;
   }
+
+  counterValue : number = 0;
+  increment() {
+    this.counterValue++;
+  }
 }

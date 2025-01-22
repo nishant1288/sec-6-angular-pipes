@@ -11,6 +11,7 @@ import { JsonPipeComponent } from './components/json-pipe/json-pipe.component';
 import { AppendTextPipe } from './pipes/append-text.pipe';
 import { SortNumbersPipe } from './pipes/sort-numbers.pipe';
 import { CustomPipeComponent } from './components/custom-pipe/custom-pipe.component';
+import { IncrementCountPipe } from './pipes/increment-count.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CustomPipeComponent } from './components/custom-pipe/custom-pipe.compon
     JsonPipeComponent,
     AppendTextPipe,
     SortNumbersPipe,
-    CustomPipeComponent
+    CustomPipeComponent,
+    IncrementCountPipe
   ],
   imports: [
     BrowserModule,
