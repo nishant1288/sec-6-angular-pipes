@@ -15,3 +15,8 @@
     <h2>Counter Value : {{counterValue | incrementCount }}</h2>
     <button (click)="increment()">Increase</button>
 </div>
+<div>
+    <h2>Custom Impure Pipe</h2>
+    <p>Sum = {{sumArr | sumPipe}}</p>
+    <button (click)="updateValueArr()" >Update Arr</button>
+</div>

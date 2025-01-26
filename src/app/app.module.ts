@@ -12,6 +12,7 @@ import { AppendTextPipe } from './pipes/append-text.pipe';
 import { SortNumbersPipe } from './pipes/sort-numbers.pipe';
 import { CustomPipeComponent } from './components/custom-pipe/custom-pipe.component';
 import { IncrementCountPipe } from './pipes/increment-count.pipe';
+import { SumPipePipe } from './pipes/sum-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { IncrementCountPipe } from './pipes/increment-count.pipe';
     AppendTextPipe,
     SortNumbersPipe,
     CustomPipeComponent,
-    IncrementCountPipe
+    IncrementCountPipe,
+    SumPipePipe
   ],
   imports: [
     BrowserModule,

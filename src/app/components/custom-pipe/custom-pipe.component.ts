@@ -25,4 +25,11 @@ export class CustomPipeComponent {
   increment() {
     this.counterValue++;
   }
+
+  sumArr = [1,2,3,4,5];
+
+  updateValueArr(){
+    this.sumArr.push(5);
+    // alert(this.sumArr)
+  }
 }
